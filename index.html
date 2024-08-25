@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/alura-logo.png" alt="logo alura">
+    </header>
+
+    <main>
+        <form class="form__contenedor">
+            <textarea class="form__ingreso" id="textarea" name="mensaje" id="" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="btn__container">
+                <div class="alert__msj">
+                    <img src="img/icono.png" alt="icono">
+                    <spam>Solo letras minúsculas y sin acentos</spam>
+                </div>
+            </div>
+            <div class="submit__container">
+                <input id="form-btn-encriptar" class="form-btn-encriptar" type="submit" value="Encriptar" >
+                <input id="form-btn-desencriptar"  class=" form-btn-encriptar    form-btn-desencriptar" type="submit" value="Desencriptar">
+            </div>
+        </form>
+        <aside class="txt-encrip">
+            <img  src="img/imagen1.png" alt="" class="txt-encrip__img" id="imagen1">
+            <div class="txt-encrip__container  txt-encrip__container2  ">
+             <h3  id="titulo-encrip" class="txt-encrip-titulo">Ningún mensaje fue encontrado</h3>
+             <p  id="msj__encrip" class="txt-encrip__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button id="btn-encriptado" class="form-btn-encriptar  form-btn-desencriptar hidden  ">Copiar</button>
+            </div> 
+         </aside>
+    </main>
+    
+    
+
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>
